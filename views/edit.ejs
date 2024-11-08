@@ -1,0 +1,17 @@
+<%- include("header.ejs")%>
+   <div id="editpage">
+    <h1 class="heading"><%= title%></h1>
+    <p><%= para%></p>
+   <div class="buttons">
+    <form action="/delete" method="post"> 
+        
+        <button  class="btn btn-danger btn-lg"  name="id"  value="<%= postId %>"> delete</button>
+       
+    </form>
+    <br>
+    <form action="/update" method="post">
+        <button class="btn btn-primary btn-lg" name="id" value="<%= postId %>">Update</button>
+    </form>
+   </div>
+   </div>
+   <%- include("footer.ejs")%>

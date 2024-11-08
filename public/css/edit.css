@@ -1,0 +1,144 @@
+#header
+{
+    
+    background-color: #FEFAF6;
+    padding-bottom: 0px;
+    color: #4B2E2E;
+    
+}
+.anchor{
+   
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        margin-left: 50px;
+     
+}
+#MainContent
+{
+    background-color: #EADBC8;
+    max-width: 100%;
+    min-height: 84vh;
+    max-height: fit-content;
+  
+}
+
+.addnew h1
+{
+    display: flex;
+    justify-content: center;
+    color: #102C57;
+    padding: 0px;
+    margin: 2px;
+   
+}
+
+.addnew_h3
+{
+    color: #4B2E2E;
+}
+.addnew p
+{
+    font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: large;
+        color: #102C57;
+}
+#addform{
+    height: auto;
+    flex: 1;
+    background: #EADBC8;
+    display: flex;
+}
+
+.forms label{
+    vertical-align: text-top;
+    font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: large;
+        color: #102C57;
+}
+ textarea{
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    resize: none;
+    -size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-color: #bfbfbf;
+    
+    
+}
+#title
+{
+    max-height: 50px;
+    max-height: 50px;
+}
+#Note
+{
+    height: 380px;
+    max-height: 380px;
+}
+    textarea:is(:focus, :valid){
+    border-width: 2px;
+    padding: 15px;
+    border-color: #4671EA;
+    }
+
+    textarea::-webkit-scrollbar{
+    width: 0px;
+}
+#updatepage
+{
+    background: #EADBC8;
+    padding: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    color: #102C57;
+}
+#updatebutton
+{
+    display: flex;
+    justify-content: center;
+}
+#editpage
+{
+    background: #EADBC8;
+    padding: 20px;
+    min-height: 84vh;
+    max-height: auto;
+
+}
+#editpage .heading{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: xxx-large ;
+    margin: 10px;
+    color: #4B2E2E;
+
+}
+#editpage p{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #102C57;
+    margin: 25px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    
+    
+}
+#footer , #footer svg
+{
+    background-color: #102C57;
+    color: #FEFAF6;
+}

@@ -1,0 +1,49 @@
+<%- include("header.ejs")%>
+<section id="addform">
+    <div class="container py-5 ">
+      <div class="row d-flex align-items-center justify-content-center ">
+        <div class="col-md-8 col-lg-7 col-xl-6">
+          <img src="/images/openart-image_EbFKZ0jP_1718699570386_raw.jpg"
+            class="img-fluid" alt="Phone image">
+        </div>
+        <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+            <form action="/submit" method="post" class="forms"> 
+            
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label for="title">Title</label> <br>
+                <textarea name="title" id="title" aria-setsize="40px" placeholder="Enter Your Title Here..."></textarea>
+               <script>
+                      const textarea = document.getElementById("title");
+                      textarea.addEventListener("keyup", e =>{
+                      textarea.style.height = "50px";
+                      textarea.style.padding="15px"
+                     
+                      });
+               </script>
+            </div>
+  
+       
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label for="Note">Short Note</label>
+                <br>
+                <textarea name="Note" id="Note" placeholder="Enter Your Story......"></textarea>
+                <script>
+                  const notearea = document.getElementById("Note");
+                  notearea.addEventListener("keyup", e =>{
+                    notearea.style.height = "400px";
+                 
+                  });
+           </script>
+            </div>
+  
+            
+  
+            <!-- Submit button -->
+            <button class="btn btn-primary"> ADDNEW</button>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+    <%- include("footer.ejs")%>

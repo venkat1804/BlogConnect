@@ -1,0 +1,36 @@
+<%- include("header.ejs")%>
+   <div id="updatepage">
+    <form action="/updateSave" method="post">  
+      <div data-mdb-input-init class="form-outline mb-4">
+        <input type="text" name="id" id="id" value="<%=id %>" hidden>
+        <label for="title">Title</label> <br>
+        <textarea name="title" id="title"><%= title %></textarea>
+       <script>
+              const textarea = document.getElementById("title");
+              textarea.addEventListener("keyup", e =>{
+              textarea.style.height = "50px";
+              textarea.style.padding="15px"
+             
+              });
+       </script>
+    </div>
+  
+  
+    <div data-mdb-input-init class="form-outline mb-4">
+        <label for="Note">Short Note</label>
+        <br>
+        <textarea name="Note" id="Note" ><%=para  %></textarea>
+        <script>
+          const notearea = document.getElementById("Note");
+          notearea.addEventListener("keyup", e =>{
+            notearea.style.height = "380px";
+         
+          });
+   </script>
+    </div>
+    <div id="updatebutton">
+      <button type="submit" class="btn btn-info">Update</button>
+    </div>
+  </form>
+   </div>
+    <%- include("footer.ejs")%>
